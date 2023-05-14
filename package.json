@@ -106,7 +106,8 @@
     "test:fuzz": "forge test --mp test/foundry/new/FuzzMain.t.sol",
     "test:fuzz:concrete": "forge test --mt test_concrete",
     "test:fuzz:metrics": "yarn ts-node scripts/plot_metrics.ts",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "deploy:ganache": "hardhat run scripts/deploy.ts --network ganache"
   },
   "lint-staged": {
     "*.sol": "prettier --write",

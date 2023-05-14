@@ -137,6 +137,12 @@ const config: HardhatUserConfig = {
       throwOnCallFailures: false,
       allowUnlimitedContractSize: false,
     },
+    ganache: {
+      url: process.env.NODE_URL,
+      accounts: {
+        mnemonic: "test test test test test test test test test test test junk"
+      }
+    },
     verificationNetwork: {
       url: process.env.NETWORK_RPC ?? "",
     },
