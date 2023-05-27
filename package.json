@@ -107,7 +107,8 @@
     "test:fuzz:concrete": "forge test --mt test_concrete",
     "test:fuzz:metrics": "yarn ts-node scripts/plot_metrics.ts",
     "prepare": "husky install",
-    "deploy:ganache": "hardhat run scripts/deploy.ts --network ganache"
+    "deploy:ganache": "hardhat run scripts/deploy.ts --network ganache",
+    "deploy:goerli": "hardhat run scripts/deploy.ts --network goerli"
   },
   "lint-staged": {
     "*.sol": "prettier --write",

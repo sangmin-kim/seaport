@@ -143,6 +143,10 @@ const config: HardhatUserConfig = {
         mnemonic: "test test test test test test test test test test test junk"
       }
     },
+    goerli: {
+      url: process.env.ALCHEMY_API_URL,
+      accounts: [process.env.PRIVATE_ACCOUNT_KEY!]
+    },
     verificationNetwork: {
       url: process.env.NETWORK_RPC ?? "",
     },
